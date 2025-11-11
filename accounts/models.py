@@ -13,4 +13,4 @@ class Accounts(models.Model):
     rol = models.CharField(choices=ROLES)
 
     def __str__(self):
-        return f"{id}. {self.first_name} - {self.last_name} -- {self.rol}"
+        return f"{self.id}. {self.first_name} - {self.last_name} -- {self.rol}"
